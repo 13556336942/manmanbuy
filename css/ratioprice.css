@@ -1,1 +1,32 @@
-/* No CSS *//*# sourceMappingURL=ratioprice.css.map */
+.layout {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.layout .header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout .header a:nth-of-type(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("/images/header_logo.png") no-repeat center;
+  background-size: 280px 28px;
+}
+
+.layout .header a:nth-of-type(2) {
+  width: 34px;
+  height: 34px;
+  background: url("/images/header_app.png") no-repeat;
+  background-size: 34px 34px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+/*# sourceMappingURL=ratioprice.css.map */
