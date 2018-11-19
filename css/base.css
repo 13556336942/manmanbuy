@@ -46,7 +46,7 @@ button {
     cursor: pointer
 }
 /*取消链接的下划线*/
-a {
+a,button {
     color: #666;
     text-decoration: none
 }

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+.layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background: #f1f1f1;
+  margin: 0 auto;
+  /*头部搜索*/
+  /*头部导航*/
+}
+
+.layout .header {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #ff7f27;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout .header form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout .header form input {
+  width: 100%;
+  height: 30px;
+  margin: 8px 10px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding-left: 30px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout .header form .btn {
+  width: 100px;
+  height: 30px;
+  background: #ff841d;
+  border: none;
+  margin: 8px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.layout .header_nav {
+  margin-top: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+}
+
+.layout .header_nav ul {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.layout .header_nav ul li {
+  width: 25%;
+  float: left;
+  padding-top: 20px;
+}
+
+.layout .header_nav ul li a {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
+
+.layout .header_nav ul li a img {
+  width: 50%;
+  display: inline-block;
+}
+
+.layout .product {
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.layout .product .mmm_title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  font-family: "songti";
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ff9e20;
+}
+
+.layout .product .product-list {
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  border: 1px solid #f1f1f1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout .product .product-list li {
+  height: 150px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.layout .product .product-list li .pic {
+  position: absolute;
+  left: 0px;
+  top: 18px;
+}
+
+.layout .product .product-list li .pic img {
+  width: 30%;
+}
+
+.layout .product .product-list li .t-content {
+  display: block;
+  padding-left: 133px;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+}
+
+.layout .product .product-list li .t-content .momey {
+  color: red;
+}
+
+.layout .product .product-list li .t-content .jd_title {
+  position: absolute;
+  left: 130px;
+  top: 92px;
+}
+
+.layout .product .product-list li .t-content .comment {
+  position: absolute;
+  right: 5px;
+  top: 92px;
+}
+
+.layout .product .price {
+  width: 100%;
+  line-height: 50px;
+  background: #fff;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout .product .price a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background: #f7f7f7;
+  -webkit-box-shadow: 2px 2px 2px #eee,-2px -2px 2px #eee;
+          box-shadow: 2px 2px 2px #eee,-2px -2px 2px #eee;
+  font-size: 16px;
+  color: #000;
+}
+/*# sourceMappingURL=index.css.map */
