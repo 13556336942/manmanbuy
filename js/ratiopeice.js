@@ -27,7 +27,7 @@ $(function () {
                         },
                         dataType: "json",
                         success: function (res) {
-                            // console.log(res);
+                            console.log(res);
                             //根据当前的titleid显示对应的内容
                             var itemHTML = template("itemTmp", {
                                 list: res.result

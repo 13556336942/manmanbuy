@@ -13,15 +13,17 @@
 
 <body>
     <div class="layout">
-        <div class="header">
-            <a href="javascript:;">
-
-            </a>
-            <a href="javascript:;"></a>
-        </div>
-        <div class="header_search">
-            <input type="text" name="" id="" placeholder="请输入您想比价的商品">
-            <input type="button" value="搜索">
+        <div class="top">
+            <div class="header">
+                <a href="javascript:;">
+                    
+                </a>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="header_search">
+                <input type="text" name="" id="" placeholder="请输入您想比价的商品">
+                <input type="button" value="搜索">
+            </div>
         </div>
         <div class="panel-group ratiopriceItems" id="accordion" role="tablist" aria-multiselectable="true">
         </div>
@@ -90,7 +92,15 @@
     <script type="text/template" id="itemTmp">
         {{each list as value index}}
             <li>
-                <a href="javascript:;">{{value.category}}</a>
+                <a href="
+                {{if value.category == '电视'}}
+                productItem.html?categoryid={{value.categoryId}}
+                {{else if value.category == '影院'}}
+                yingyuan.html?categoryid={{value.categoryId}}
+                {{else}}
+                javascript:;
+                {{/if}}
+                ">{{value.category}}</a>
             </li>
         {{/each}}
     </script>
