@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*省钱控样式*/
+/*头部样式*/
+.saveMoney_header {
+  min-width: 320px;
+  width: 100%;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  background-color: #ff841d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.saveMoney_header a:first-of-type {
+  width: 12px;
+  height: 30px;
+  background: url(../images/icon_bar.png) -208px -30px;
+}
+
+.saveMoney_header h1 {
+  margin: 0;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.saveMoney_header a:last-of-type {
+  width: 33px;
+  height: 24px;
+}
+
+.saveMoney_header a:last-of-type img {
+  display: block;
+  width: 100%;
+}
+
+/*商品样式*/
+.saveMoney_commodity {
+  min-width: 320px;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 120px;
+}
+
+.saveMoney_commodity .commodity_box {
+  padding: 14px 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.saveMoney_commodity .commodity_box .pic_left {
+  float: left;
+  width: 110px;
+}
+
+.saveMoney_commodity .commodity_box .pic_left img {
+  width: 100px;
+  height: 100px;
+}
+
+.saveMoney_commodity .commodity_box .pic_right {
+  padding-left: 90px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.saveMoney_commodity .commodity_box .pic_right .title {
+  color: #333;
+  min-height: 57px;
+  text-align: left;
+}
+
+.saveMoney_commodity .commodity_box .pic_right .title span {
+  color: #ff6c00;
+  display: block;
+}
+
+.saveMoney_commodity .commodity_box .pic_right .other {
+  margin-top: 8px;
+  color: #a1a1a1;
+}
+
+.saveMoney_commodity .commodity_box .pic_right .other .mall {
+  font-size: 12px;
+  float: left;
+}
+
+/*分页样式*/
+.paging {
+  min-width: 320px;
+  width: 100%;
+  height: 70px;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paging .page {
+  width: 33.33%;
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paging .aLLA {
+  width: 100px;
+  height: 34px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+  background-color: #b9b9b9;
+}
+
+.paging .page_nmb {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.paging .page_nmb .selectPage_two {
+  font-size: 16px;
+  padding: 16px 15px;
+  height: 32px;
+  outline-style: none;
+}
+
+/*底部*/
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #efefef;
+}
+
+.footer .footer_nav {
+  width: 100%;
+}
+
+.footer .footer_nav > ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.footer .footer_nav > ul > li {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border-right: 1px solid #c5c5c5;
+}
+
+.footer .footer_nav > ul > li a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.footer .footer_nav > ul > li:nth-last-of-type(1) {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  border-right: 0;
+}
+
+.footer .footer_download {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #000;
+}
+
+.footer .footer_download > a {
+  color: #e92322;
+}
+
+.footer .footer_download > span {
+  color: #5a5a5a;
+}
+/*# sourceMappingURL=SaveMoney.css.map */
