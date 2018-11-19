@@ -131,6 +131,7 @@
 .layout .header_nav ul {
   width: 100%;
   padding: 5px 0;
+  overflow: hidden;
 }
 
 .layout .header_nav ul li {
@@ -170,6 +171,12 @@
   background: #ff9e20;
 }
 
+.layout .product .mmm_title .title-rigth span {
+  display: block;
+  font-size: 37px;
+  margin-right: 10px;
+}
+
 .layout .product .product-list {
   width: 100%;
   display: block;
@@ -201,7 +208,6 @@
   padding-left: 133px;
   font-size: 14px;
   color: #000;
-  position: relative;
 }
 
 .layout .product .product-list li .t-content .momey {
@@ -216,7 +222,7 @@
 
 .layout .product .product-list li .t-content .comment {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 92px;
 }
 

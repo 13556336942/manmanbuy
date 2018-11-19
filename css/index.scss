@@ -104,9 +104,11 @@
         width:100%;
         box-sizing:border-box;
         background:#fff;
+        
         ul{
             width:100%;
             padding: 5px 0;
+            overflow: hidden;
             li{
                 width:25%;
                 float: left;
@@ -139,6 +141,14 @@
             color:#fff;
             box-sizing: border-box;
             background:#ff9e20;
+            .title-rigth{
+                span{
+                    display:block;
+                    font-size:37px;
+                    margin-right:10px;
+                }
+            }
+           
         }
         .product-list{
             width:100%;
@@ -165,7 +175,6 @@
                     padding-left:133px;
                     font-size:14px;
                     color:#000;
-                    position: relative;
                     .momey{
                         color:red;
                     }
@@ -176,7 +185,7 @@
                     }
                     .comment{
                         position:absolute;
-                        right:5px;
+                        right:15px;
                         top:92px;
                     }
                 }
