@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productItem.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="top">
+            <div class="header">
+                <a href="javascript:;">
+
+                </a>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="header_search">
+                <input type="text" name="" id="" placeholder="请输入您想比价的商品">
+                <input type="button" value="搜索">
+            </div>
+        </div>
+        <!-- 商品部分 -->
+        <div class="saveMoney_commodity">
+            <ul class="liBox">
+            </ul>
+        </div>
+        <!-- 分页 -->
+        <div class="paging">
+            <div class="page_up page">
+                <a href="javascript:;" class="aLLA">上一页</a>
+            </div>
+            <div class="page_nmb page">
+                <select id="selectPage" class="selectPage_two">
+                    <option value="1">1/10</option>
+                    <option value="2">2/10</option>
+                    <option value="3">3/10</option>
+                    <option value="4">4/10</option>
+                    <option value="5">5/10</option>
+                    <option value="6">6/10</option>
+                    <option value="7">7/10</option>
+                    <option value="8">8/10</option>
+                    <option value="9">9/10</option>
+                    <option value="10">10/10</option>
+                </select>
+            </div>
+            <div class="page_down page">
+                <a href="javascript:;" class="aLLA">下一页</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_nav">
+                <ul>
+                    <li>
+                        <a href="javascript:;">登录</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">注册</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer_download">
+                <a href="javascript:;">手机app下载</a>
+                慢慢买手机版
+                <span>--账上比价平台</span>
+            </p>
+        </div>
+    </div>
+    <script type="text/template" id="shoop">
+        {{each data as value index}}
+        <li class="commodity_box" id="{{value.productId}}">
+                <a href="commodity_details.html?id={{value.productId}}" class="clearfix">
+                    <div class="pic_left">
+                        {{#value.productImg}}
+                    </div>
+                    <div class="pic_right clearfix">
+                        <div class="title">
+                            {{value.productName}}
+                            <span>{{value.productPrice}}</span>
+                        </div>
+                        <div class="other">
+                            <span class="mall">{{value.productQuote}} | {{value.productCom}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/art-template/template-web.js"></script>
+    <script rc="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/productItem.js"></script>
+</body>
+
+</html>
