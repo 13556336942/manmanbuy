@@ -46,13 +46,7 @@ button {
     cursor: pointer
 }
 /*取消链接的下划线*/
-<<<<<<< HEAD
-a {
-    box-sizing: border-box;
-    padding: 0;
-=======
 a,button {
->>>>>>> 541028352a6f7bb7739e2df09cd9dacfd5059919
     color: #666;
     text-decoration: none
 }

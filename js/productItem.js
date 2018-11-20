@@ -3,7 +3,7 @@ $(function(){
     var categoryid = location.search.split("=")[1];
     $.ajax({
         type: "get",
-        url: "http://193.112.55.79:9090/api/getproductlist",
+        url: "http://193.112.55.79:9090/api/getinlanddiscount",
         data: {
             categoryid:categoryid
         },

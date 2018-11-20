@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/productItem.css">
     <title>Document</title>
 </head>
@@ -78,7 +78,7 @@
     <script type="text/template" id="shoop">
         {{each data as value index}}
         <li class="commodity_box" id="{{value.productId}}">
-                <a href="javascript:;" class="clearfix">
+                <a href="commodity_details.html?id={{value.productId}}" class="clearfix">
                     <div class="pic_left">
                         {{#value.productImg}}
                     </div>
@@ -95,11 +95,11 @@
             </li>
         {{/each}}
     </script>
-    <script src="/lib/jquery/jquery.min.js"></script>
-    <script src="/lib/art-template/template-web.js"></script>
-    <script rc="/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/common.js"></script>
-    <script src="/js/productItem.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/art-template/template-web.js"></script>
+    <script rc="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/productItem.js"></script>
 </body>
 
 </html>
