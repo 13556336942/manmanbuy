@@ -1,0 +1,74 @@
+@import "./common.scss";
+
+.ratiopriceItems {
+    width: 100%;
+    margin-top: 120px;
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+
+    .panel-default>.panel-heading {
+        position: relative;
+        background-color: rgb(237, 237, 237);
+        padding: 0;
+        width: 100%;
+
+        .panel-title {
+            .button {
+                display: block;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                height: 100%;
+                padding-left: 20px;
+            }
+        }
+
+        .down {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    .panel+.panel {
+        margin-top: 0;
+    }
+
+    .panel-title>a,
+    .panel-title>small,
+    .panel-title>.small,
+    .panel-title>small>a,
+    .panel-title>.small>a {
+        color: #000;
+        font-weight: 700;
+    }
+
+    .panel-body {
+        width: 100%;
+        padding: 0;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            >li {
+                width: 33.33%;
+                text-align: center;
+                font-size: 14px;
+                border: 1px solid rgb(204, 204, 204);
+
+                a {
+                    display: block;
+                    width: 100%;
+                    color: #000;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}

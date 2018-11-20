@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*我们约定将UI稿件按20份来划分*/
+@media screen and (device-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (device-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (device-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+
+@media screen and (device-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+/*# sourceMappingURL=adapter.css.map */
