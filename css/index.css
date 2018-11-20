@@ -1,21 +1,12 @@
 @charset "UTF-8";
 .layout {
-  position: relative;
   min-width: 320px;
   max-width: 640px;
   margin: 0 auto;
   /*头部导航*/
 }
 
-.layout .top {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-.layout .top .header {
+.layout .header {
   width: 100%;
   height: 50px;
   background-color: #ff841d;
@@ -24,7 +15,7 @@
   display: flex;
 }
 
-.layout .top .header a:nth-of-type(1) {
+.layout .header a:nth-of-type(1) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -34,7 +25,7 @@
   background-origin: content-box;
 }
 
-.layout .top .header a:nth-of-type(2) {
+.layout .header a:nth-of-type(2) {
   width: 34px;
   height: 34px;
   background: url("/images/header_app.png") no-repeat;
@@ -43,22 +34,14 @@
   margin-top: 8px;
 }
 
-<<<<<<< HEAD
 .layout .header_search {
-=======
-.layout .top .header_search {
->>>>>>> 05cf6267ad4b02eee10e276036d1bbcc44ded2b3
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-<<<<<<< HEAD
 .layout .header_search input[type="text"] {
-=======
-.layout .top .header_search input[type="text"] {
->>>>>>> 05cf6267ad4b02eee10e276036d1bbcc44ded2b3
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -69,11 +52,7 @@
   padding-left: 20px;
 }
 
-<<<<<<< HEAD
 .layout .header_search input[type="button"] {
-=======
-.layout .top .header_search input[type="button"] {
->>>>>>> 05cf6267ad4b02eee10e276036d1bbcc44ded2b3
   width: 75px;
   height: 40px;
   margin-left: 10px;
@@ -141,7 +120,6 @@
   color: #5a5a5a;
 }
 
-<<<<<<< HEAD
 .layout .header_nav {
   margin-top: 10px;
   width: 100%;
@@ -153,6 +131,7 @@
 .layout .header_nav ul {
   width: 100%;
   padding: 5px 0;
+  overflow: hidden;
 }
 
 .layout .header_nav ul li {
@@ -192,6 +171,12 @@
   background: #ff9e20;
 }
 
+.layout .product .mmm_title .title-rigth span {
+  display: block;
+  font-size: 37px;
+  margin-right: 10px;
+}
+
 .layout .product .product-list {
   width: 100%;
   display: block;
@@ -223,7 +208,6 @@
   padding-left: 133px;
   font-size: 14px;
   color: #000;
-  position: relative;
 }
 
 .layout .product .product-list li .t-content .momey {
@@ -238,7 +222,7 @@
 
 .layout .product .product-list li .t-content .comment {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 92px;
 }
 
@@ -260,80 +244,5 @@
           box-shadow: 2px 2px 2px #eee,-2px -2px 2px #eee;
   font-size: 16px;
   color: #000;
-=======
-.ratiopriceItems {
-  width: 100%;
-  margin-top: 120px;
 }
-
-.ratiopriceItems a:hover,
-.ratiopriceItems a:focus {
-  text-decoration: none;
-}
-
-.ratiopriceItems .panel-default > .panel-heading {
-  position: relative;
-  background-color: #ededed;
-  padding: 0;
-  width: 100%;
-}
-
-.ratiopriceItems .panel-default > .panel-heading .panel-title .button {
-  display: block;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  height: 100%;
-  padding-left: 20px;
-}
-
-.ratiopriceItems .panel-default > .panel-heading .down {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.ratiopriceItems .panel + .panel {
-  margin-top: 0;
-}
-
-.ratiopriceItems .panel-title > a,
-.ratiopriceItems .panel-title > small,
-.ratiopriceItems .panel-title > .small,
-.ratiopriceItems .panel-title > small > a,
-.ratiopriceItems .panel-title > .small > a {
-  color: #000;
-  font-weight: 700;
-}
-
-.ratiopriceItems .panel-body {
-  width: 100%;
-  padding: 0;
-}
-
-.ratiopriceItems .panel-body ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.ratiopriceItems .panel-body ul > li {
-  width: 33.33%;
-  text-align: center;
-  font-size: 14px;
-  border: 1px solid #cccccc;
-}
-
-.ratiopriceItems .panel-body ul > li a {
-  display: block;
-  width: 100%;
-  color: #000;
-  line-height: 50px;
->>>>>>> 05cf6267ad4b02eee10e276036d1bbcc44ded2b3
-}
-/*# sourceMappingURL=ratioprice.css.map */
+/*# sourceMappingURL=index.css.map */
