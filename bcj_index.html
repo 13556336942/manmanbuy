@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白菜价-淘宝内部券</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bcj_index.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/iscroll.js"></script>
+    <script src="js/bcj_index.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- 白菜价列表头部开始 -->
+        <div class="header">
+            <a href="javascript:;"></a>
+            <span onclick="javascript:history.go(-1)" class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            <h3>白菜价-淘宝内部券</h3>
+            <a href="javascript:;"></a>
+        </div>
+        <!-- 白菜价列表头部结束 -->
+        <!-- 标题列表开始 -->
+        <div class="bcj_titleList">
+            <div id="wrapper" class="huaDong">
+                <ul id="bcj_navId">
+                    <li><a href="javascript:;">1</a></li>
+                    <li><a href="javascript:;">2</a></li>
+                    <li><a href="javascript:;">3</a></li>
+                    <li><a href="javascript:;">4</a></li>
+                    <li><a href="javascript:;">5</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 标题列表结束 -->
+        <!-- 商品列表开始 -->
+        <div class="bcj_CommodityList">
+               <ul id="commodityId">
+                   <li>
+                       <div class="cMain clearfix">
+                            <div class="cMainLeft fl">
+                                <a href=""><img src="images/32x(10).jpg" alt=""></a>
+                            </div>
+                            <div class="cMainRight fl">
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                            </div>
+                       </div>
+                   </li>
+                   <li>2</li>
+                   <li>3</li>
+                   <li>4</li>
+               </ul> 
+        </div>
+    <!-- 商品列表结束 -->
+    <!-- 底部开始 -->
+    <div class="footer">
+        <div class="footer_nav">
+            <ul>
+                <li>
+                    <a href="javascript:;">登录</a>
+                </li>
+                <li>
+                    <a href="javascript:;">注册</a>
+                </li>
+                <li>
+                    <a href="javascript:;">返回顶部</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer_download">
+            <a href="javascript:;">手机app下载</a>
+            慢慢买手机版
+            <span>--账上比价平台</span>
+        </p>
+    </div>
+    <div id="backIco">
+        <span class="glyphicon glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+    </div>
+</div>
+    <!-- 底部结束 -->
+    
+</body>
+</html>
+<script type="text/template" id="bcj_navTId">
+{{each $data}}
+{{if $value.title=="全部"}}
+    <li titleId={{$value.titleId}} class="dianJi"><a href="javascript:;">{{$value.title}}</a></li>
+{{else}}
+    <li titleId={{$value.titleId}}><a href="javascript:;">{{$value.title}}</a></li>
+{{/if}}
+
+{{/each}}
+</script>
+<script type="text/template" id="bcj_commodityTId">
+    {{each $data}}
+    <li>
+        <div class="cMain clearfix">
+            <div class="cMainLeft fl">
+                <a href="javascript:;">{{#$value.productImg}}</a>
+            </div>
+            <div class="cMainRight fl">
+                <ul>
+                    <li>{{#$value.productName}}</li>
+                    <li>{{#$value.productPrice}}</li>
+                    <li>{{#$value.productCouponRemain}}</li>
+                    <li>{{#$value.productCoupon}}<p>&nbsp;</p>{{#$value.productHref}}</li>
+                </ul>
+            </div>
+        </div>
+        </li>
+    {{/each}}
+</script>
+<script src="lib/art-template/template-web.js"></script>
+<script>
+    var myScroll = new IScroll('#wrapper', {
+        mouseWheel: true,
+        scrollbars: false,
+        scrollX:true
+    });
+</script>

@@ -1,0 +1,170 @@
+@import "base.css";
+@import "common.css";
+/*白菜价列表头部开始*/
+.layout .header {
+  width: 100%;
+  height: 50px;
+  background-color: #f4483e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.layout .header h3 {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.layout .header span {
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.layout .header a:nth-of-type(1) {
+  display: none;
+}
+/*白菜价列表头部结束*/
+/*标题列表开始*/
+.bcj_titleList .huaDong {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.huaDong > ul {
+  width: 300%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.huaDong > ul li {
+  width: 5%;
+  height: 50px;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+}
+.huaDong > ul li a {
+  text-decoration: none;
+}
+.huaDong > ul li a:hover {
+  color: red;
+}
+/*标题列表结束*/
+/*商品列表开始*/
+.bcj_CommodityList {
+  margin-top: 10px;
+  background-color: #f7f7f7;
+}
+.bcj_CommodityList > ul {
+  height: 100%;
+}
+.bcj_CommodityList > ul > li {
+  height: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.bcj_CommodityList > ul > li .cMain {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+}
+.bcj_CommodityList > ul > li .cMain .cMainLeft {
+  width: 40%;
+  height: 100%;
+}
+.bcj_CommodityList > ul > li .cMain .cMainLeft img {
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight {
+  width: 60%;
+  height: 100%;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul {
+  height: 100%;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li:nth-of-type(1) {
+  font-size: 20px;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li:nth-of-type(2) {
+  font-size: 25px;
+  color: red;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li:nth-of-type(2) del {
+  margin-left: 15px;
+  color: #838383;
+  font-size: 15px;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li {
+  height: 25%;
+  line-height: 60px;
+  margin-left: 15px;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li a {
+  text-decoration: none;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li p {
+  display: inline-block;
+  width: 50%;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li a:nth-of-type(1) {
+  color: red;
+  border: 1px dashed red;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li a:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li div .goquan {
+  border: 1px solid red;
+  display: inline-block;
+  width: 150px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #ffb7b7;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li div .goquan::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 13px;
+  background-color: red;
+  border-radius: 5px 0 0 5px ;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li div i {
+  position: relative;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li div i span {
+  color: white;
+  position: absolute;
+  top: -22px;
+  left: -79px;
+}
+.bcj_CommodityList > ul > li .cMain .cMainRight > ul > li div b {
+  margin-left: 10px;
+}
+/*商品列表结束*/
+.dianJi {
+  border-bottom: 3px solid red;
+}
+#backIco {
+  width: 40px;
+  height: 40px;
+  background-color: #808080;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#backIco span {
+  color: white;
+}

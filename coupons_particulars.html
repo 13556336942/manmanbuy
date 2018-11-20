@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/coupons_particulars.css">
+    <title>优惠券</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">
+            <a href="javascript:;"></a>
+            <span onclick="javascript:history.go(-1)" class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> 
+            <h3 id="yTitle">优惠券</h3>
+            <a href="javascript:;"></a>
+        </div>
+        <!-- 优惠券详细列表开始 -->
+        <div class="particularsList">
+            <div>
+                <h4>--点餐前出示手机中的优惠券，即可享受优惠--</h4>
+            </div>
+            <ul id="particularsUl">
+                <li>
+                    <div class="particularsMain">
+                        <a class="particularsTop" href="javascript:;">
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <p>de</p>
+                        </a>
+                        <p class="particularsFoot">de</p>
+                    </div>
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <!-- 优惠券详细列表结束 -->
+        <div class="footer">
+            <div class="footer_nav">
+                <ul>
+                    <li>
+                        <a href="javascript:;">登录</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">注册</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer_download">
+                <a href="javascript:;">手机app下载</a>
+                慢慢买手机版
+                <span>--账上比价平台</span>
+            </p>
+        </div>
+    </div>
+    
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/art-template/template-web.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/coupons_particulars.js"></script>
+</body>
+</html>
+<script type="text/tem" id="tlId">
+    {{each $data}}
+    <li>
+        <div class="particularsMain">
+            <a class="particularsTop" href="javascript:;">
+                <div>
+                    {{#$value.couponProductImg}}
+                </div>
+                <p>{{$value.couponProductName}}<span>{{$value.couponProductPrice}}</span></p>
+            </a>
+            <p class="particularsFoot">{{$value.couponProductTime}}</p>
+        </div>
+    </li>
+    {{/each}}
+</script>
