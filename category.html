@@ -92,17 +92,18 @@
     <script type="text/template" id="itemTmp">
         {{each list as value index}}
             <li>
-                <a href="productItem.html?categoryid={{value.categoryId}}">{{value.category}}</a>
-            </li>
-        {{/each}}
-    </script>
-    <!-- {{if value.category == '电视'}}
+                <a href="
+                {{if value.category == '电视'}}
                 productItem.html?categoryid={{value.categoryId}}
                 {{else if value.category == '影院'}}
                 yingyuan.html?categoryid={{value.categoryId}}
                 {{else}}
                 javascript:;
-                {{/if}} -->
+                {{/if}}
+                ">{{value.category}}</a>
+            </li>
+        {{/each}}
+    </script>
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/art-template/template-web.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.js"></script>

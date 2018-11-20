@@ -47,12 +47,11 @@
   min-width: 320px;
   width: 100%;
   max-width: 960px;
-  margin-top: 120px;
+  margin: 0 auto;
 }
 
 .saveMoney_commodity .commodity_box {
   padding: 14px 8px;
-  border-bottom: 1px solid #ccc;
 }
 
 .saveMoney_commodity .commodity_box .pic_left {
@@ -79,7 +78,6 @@
 
 .saveMoney_commodity .commodity_box .pic_right .title span {
   color: #ff6c00;
-  display: block;
 }
 
 .saveMoney_commodity .commodity_box .pic_right .other {
