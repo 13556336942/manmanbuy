@@ -43,14 +43,17 @@ img{
 }
 /*让button 按钮 变成小手*/
 button {
-    cursor: pointer
+    cursor: pointer;
+    border: 0;
 }
 /*取消链接的下划线*/
 a {
     color: #666;
     text-decoration: none
 }
-
+a:hover,a:focus {
+    text-decoration: none;
+}
 button,
 input {
     font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, \\5B8B\4F53, sans-serif;

@@ -91,7 +91,38 @@
   font-size: 12px;
   float: left;
 }
-
+/* 面包屑样式 */
+.crumbs {
+  width: 100%;
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  font-size: 16px;
+}
+.crumbs ul {
+  flex: 1;
+  width: 100%;
+}
+.crumbs ul li {
+  float: left;
+  line-height: 50px;
+}
+.crumbs ul li a {
+  display: block;
+  text-align: center;
+  color: #000;
+  
+  margin: 0 5px;
+}
+.crumbs .filtrae {
+  width: 60px;
+  height: 32px;
+  margin-top: 9px;
+  margin-right: 10px;
+  color: #000;
+  border-radius: 5px;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 1px 1px 2px 1px #ccc;
+}
 /*分页样式*/
 .paging {
   min-width: 320px;
@@ -120,7 +151,7 @@
   text-align: center;
   padding-top: 5px;
   border-radius: 5px;
-  background-color: #b9b9b9;
+  background-color: #ddd;
 }
 
 .paging .page_nmb {
@@ -130,12 +161,50 @@
 }
 
 .paging .page_nmb .selectPage_two {
+  position: relative;
+  width: 80px;
   font-size: 16px;
-  padding: 16px 15px;
   height: 32px;
-  outline-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  line-height: 32px;
 }
-
+.paging .page_nmb .selectPage_two .selectText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 15px;
+  width: 100%;
+  height: 32px
+}
+.paging .page_nmb .selectPage_two span {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  z-index: 999;
+}
+.paging .page_nmb .selectPage_two .selectPage {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 30px;
+  border: 1px solid #ccc;
+}
+.paging .page_nmb .selectPage_two .toggle {
+  display: none;
+}
+.paging .page_nmb .selectPage_two a {
+  display: block;
+  padding: 4px 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.paging .page_nmb .selectPage_two .col{
+  background-color: rgba(0,0,255,.8);
+  color: #fff;
+}
 /*底部*/
 .footer {
   width: 100%;

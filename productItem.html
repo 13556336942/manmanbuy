@@ -26,32 +26,41 @@
                 <input type="button" value="搜索">
             </div>
         </div>
+
         <!-- 商品部分 -->
         <div class="saveMoney_commodity">
+            <!-- 面包屑部分 -->
+            <div class="crumbs">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="category.html">全部分类</a>
+                    </li>
+                    <li>></li>
+                    
+                </ul>
+                <button class="filtrae">筛选</button>
+            </div>
             <ul class="liBox">
             </ul>
         </div>
         <!-- 分页 -->
         <div class="paging">
             <div class="page_up page">
-                <a href="javascript:;" class="aLLA">上一页</a>
+                <a href="javascript:;" class="aLLA prev">上一页</a>
             </div>
             <div class="page_nmb page">
-                <select id="selectPage" class="selectPage_two">
-                    <option value="1">1/10</option>
-                    <option value="2">2/10</option>
-                    <option value="3">3/10</option>
-                    <option value="4">4/10</option>
-                    <option value="5">5/10</option>
-                    <option value="6">6/10</option>
-                    <option value="7">7/10</option>
-                    <option value="8">8/10</option>
-                    <option value="9">9/10</option>
-                    <option value="10">10/10</option>
-                </select>
+                <div id="selectPage" class="selectPage_two">
+                    <div class="selectText"></div>
+                    <div class="selectPage toggle"></div>
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                </div>
             </div>
             <div class="page_down page">
-                <a href="javascript:;" class="aLLA">下一页</a>
+                <a href="javascript:;" class="aLLA next">下一页</a>
             </div>
         </div>
         <div class="footer">
